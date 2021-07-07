@@ -1,0 +1,86 @@
+.aboutDiv {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: white;
+    margin: 13rem 7rem;
+    line-height: 25px;
+    z-index: 999;
+    justify-content:space-between;
+  }
+  .imgStyle{
+    border-radius:50% ;
+    max-width: 380px;
+    min-width: 380px;
+  }
+  .aboutTitle{
+    color: #685dc5;
+    margin-bottom: 5px;
+  }
+ 
+  .sectionImg{
+    position: relative;
+    height: 380px;
+    max-width: 380px;
+    min-width: 380px;
+    margin: 30px;
+    z-index: 6;
+  }
+  .sectionImg::before{
+    content: "";
+    position: absolute;
+    inset: -30px;
+    margin: auto;
+    background: url(https://harbour.space/images/pattern-grid.svg) 15px 15px / 40px;
+    border-radius: 50%;
+    border: 1px solid rgb(230, 230, 230);
+    z-index: -1;
+  }
+  .sectionImg::after{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+    z-index: 3;
+  }
+
+@media only screen and (max-width: 600px) {
+  
+     .sectionImg {
+    position: relative;
+    height: 240px;
+    max-width: 200px;
+    min-width: 218px;
+    margin: 30px;
+    z-index: 6;
+  }
+  .sectionImg::before{
+    content: "";
+    position: absolute;
+    inset: -30px;
+    margin: auto;
+    background: url(https://harbour.space/images/pattern-grid.svg) 15px 15px / 40px;
+    border-radius: 10rem 10rem 0 0;
+    border: 1px solid rgb(230, 230, 230);
+    inset: -42px -41px auto -42px;
+    height: 167px;
+    z-index: -1;
+  }
+  .sectionPar{
+    width: 301px;
+    margin-left: -12px;
+  }
+  .sectionPar::after{
+    content: "";
+    position: absolute;
+    top: 92rem;
+    left: -65px;
+    right: -65px;
+    height: 390px;
+    background: rgb(104, 93, 197);
+    z-index: -5;
+    width: 440px;
+  }
+  
+}
+

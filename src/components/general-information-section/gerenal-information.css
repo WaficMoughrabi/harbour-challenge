@@ -1,0 +1,106 @@
+.giDiv {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 9rem 7rem;
+    line-height: 25px;
+    z-index: 999;
+    justify-content:space-between;
+  }
+  .section{
+      padding: 0rem;
+  }
+  .giDiv > div {
+    width: 46%;
+    font-size: 30px;
+  }
+  .giTitle{
+      color: #685dc5;
+      font-weight: 600;
+      margin-bottom: 5px;
+  }
+ 
+  .giContext{
+      font-size: 22px;
+      font-weight: 300;
+    line-height:32px;
+      color:#535353;  
+      margin-bottom: 40px;
+  }
+  .giCompany{
+    position: relative;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: flex-start;
+  }
+
+ 
+
+  .smallTitles{
+      color:#685dc5;
+      font-size:16px;
+      font-weight: 500;
+      
+  }
+  .btnCustom1{
+    text-transform: none;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 16px 37px;
+    position: relative;
+    display: inline-block;
+    background-color: rgb(104, 93, 197);
+    color: white;
+    box-sizing: border-box;
+    border-radius: 30px;
+    border: 1px solid rgb(104, 93, 197);
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .giPosition{
+    position: relative;
+    font-size: 22px;
+    line-height: 32px;
+    letter-spacing: -0.33px;
+    margin-bottom: 40px;
+    z-index: 1;
+    color: #535353;
+  }
+
+  .giPosition > span{
+    font-weight:500;
+  }
+
+  .odometer-block > span{
+    content: ":";
+    margin-right: 1rem;
+    font-size: 23px;
+    font-weight: 300;
+  }
+ td{
+     width: 65%;
+     font-size: 14px;
+     color: #535353;
+ }
+ .myDiv{
+   z-index: 99;
+
+ }
+ .myDiv::after{
+  content: "";
+  position: absolute;
+  top: 34rem;
+  right: 0px;
+  height: 315px;
+  width:  479px;;
+  background: url(https://harbour.space/images/pattern-grid.svg) 50% 50% / 40px;
+  border: 1px solid rgb(230, 230, 230);
+  z-index: -1;
+ }
+
+ @media only screen and (max-width: 600px) {
+  .myDiv::after{
+    display: none;
+    
+  }
+}

@@ -1,0 +1,35 @@
+.buttomDiv{
+
+    border-top: 1px solid #5353531f;
+    width: 100%;
+    bottom: 0px;
+    position: sticky;
+    z-index: 9999;
+    background-color: white;
+}
+.stickyNavbar {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0.5rem 5rem;
+    line-height: 25px;
+    z-index: 999;
+    padding-bottom: 10px;
+  }
+  
+  .stickyNavbar > div {
+    background-color: white;
+    width: 250px;
+    font-size: 30px;
+  }
+
+  .navTitle{
+      font-size:15px;
+      font-weight: 700 ;
+      color: #535353;
+  }
+
+  .navText{
+    font-size:15px;
+    font-weight: 400 ;
+    color: #5b5b5b;
+}
