@@ -8,33 +8,33 @@ function StickyBar() {
   
 
   return (
-    <div class="buttomDiv lg:block hidden">
-    <div class="stickyNavbar">
+    <div className="buttomDiv lg:block hidden">
+    <div className="stickyNavbar">
         
         
         <div>
-          <span class="navTitle">Zeptolab</span><br></br>
-          <span class="navText">Marketing Performance</span>
+          <span className="navTitle">Zeptolab</span><br></br>
+          <span className="navText">Marketing Performance</span>
         </div>
         <div>
-          <span class="navTitle">Location</span><br></br>
-          <span class="navText">Bangkok</span>
+          <span className="navTitle">Location</span><br></br>
+          <span className="navText">Bangkok</span>
         </div>
         <div>
-          <span class="navTitle">Duration</span><br></br>
-          <span class="navText">1 Year Full-Time</span>
+          <span className="navTitle">Duration</span><br></br>
+          <span className="navText">1 Year Full-Time</span>
         </div>  
         <div>
-          <span class="navTitle">Start date</span><br></br>
-          <span class="navText">3 Aug 2020</span>
+          <span className="navTitle">Start date</span><br></br>
+          <span className="navText">3 Aug 2020</span>
         </div>
         <div>
-          <span class="navTitle">Application deadline</span><br></br>
-          <span class="navText">30 June 2020</span>
+          <span className="navTitle">Application deadline</span><br></br>
+          <span className="navText">30 June 2020</span>
         </div>
         <div>
-          <span class="navTitle">Application closes in</span><br></br>
-          <span class="navText"> <DateCountdown dateTo={data.scholarship.application_end_date} numberOfFigures={3} /></span>
+          <span className="navTitle">Application closes in</span><br></br>
+          <span className="navText"> <DateCountdown locales={[" Year"," Month", " Day"]} dateTo={data.scholarship.application_end_date} numberOfFigures={3} /></span>
         </div>
     </div>
     </div>

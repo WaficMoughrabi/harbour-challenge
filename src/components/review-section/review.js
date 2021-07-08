@@ -1,9 +1,12 @@
-import React, {useContext, useEffect,useState,useLayoutEffect} from 'react';
+import React, {useContext, useEffect,useState} from 'react';
 import { InfoContext } from '../context';
 import Carousel, { slidesToShowPlugin } from '@brainhubeu/react-carousel';
 import '@brainhubeu/react-carousel/lib/style.css';
 import '../review-section/review.css';
 import SingleCard from './single-card';
+import "../review-section/cursor.css";
+
+import { motion, useMotionValue,useSpring } from "framer-motion";
 
 
 
@@ -11,9 +14,7 @@ import SingleCard from './single-card';
 
 function ReviewSection(props){
         const data=useContext(InfoContext);
-        console.log(data);
         var numOfSlider=0;
-        console.log(data.scholarship.instructors);
         var w;
 
         function useWindowSize()  {
@@ -28,21 +29,47 @@ function ReviewSection(props){
           }, []);
           return size;
         }
-        var w= useWindowSize()
+        w= useWindowSize();
          
-        console.log("WIDRH " + w);
         if(w<600){
           numOfSlider=1;
         }else if(w>600){
           numOfSlider=2;
-          console.log(numOfSlider);
         }
+
+        const cursorX = useMotionValue(-100);
+        const cursorY = useMotionValue(-100);
+      
+        const springConfig = { damping: 150, stiffness: 2000 };
+        const cursorXSpring = useSpring(cursorX, springConfig);
+        const cursorYSpring = useSpring(cursorY, springConfig);
+      
+        useEffect(() => {
+          const moveCursor = (e) => {
+            cursorX.set(e.clientX - 16);
+            cursorY.set(e.clientY - 16);
+          };
+      
+          window.addEventListener("mousemove", moveCursor);
+      
+          return () => {
+            window.removeEventListener("mousemove", moveCursor);
+          };
+        }, []);
+      
 
 
 
     return(
-        <div class="reviewDiv"> 
+        <div className="reviewDiv"> 
         
+        <motion.div
+  className="cursor"
+  style={{
+    translateX: cursorXSpring,
+    translateY: cursorYSpring,
+  }}
+/>
         <Carousel
         
         plugins={[

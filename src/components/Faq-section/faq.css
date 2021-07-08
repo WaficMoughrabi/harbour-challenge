@@ -15,14 +15,36 @@
     color: #685dc5;
     font-style: normal;
 }
+select {
+  -webkit-appearance: auto;
+    -moz-appearance : auto;
+  border-radius: 2rem;
+  border: 1px solid #DADADA;
+  padding:5px 15px;
+  background: transparent;
+}
+select:active,select:focus{
+  outline: none;
+  border-radius: 2rem 2rem 0 0;
+  transition: 0.1;
+}
+select option {
+  margin: 40px;
+  background: rgba(255, 255, 255, 0);
+  color:#685dc5;
+  font-weight: 300;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+  border-radius: 0 0 2rem 2rem;
+}
 .dropdownStyle{
-    left: 25.87%;
-    right: 0%;
-    top: 0%;
-    bottom: 0%;
-    border: 1px solid #DADADA;
-    box-sizing: border-box;
-    border-radius: 29px;
+  font-size:16px;
+  color: #685DC5;
+  font-weight: 500;
+  box-sizing: border-box;
+  border-radius: 2rem;
+  height: 58px;
+  background: transparent;
+  width: 235px;
 }
   
   

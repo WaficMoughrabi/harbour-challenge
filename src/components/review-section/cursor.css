@@ -1,0 +1,36 @@
+.cursor {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    background-color: #523996;
+    z-index: 9999;
+    transition: 0.15s;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .reviewDiv{
+      cursor: none;
+
+  }
+
+ .reviewDiv:hover  > .cursor{
+    visibility: visible;
+    cursor: none !important;
+    background-color: #523996ec;
+    width: 4.5rem;
+    border-radius: 2rem;
+    color: white;
+    transition: 0.15s;
+  }
+  .reviewDiv:hover  > .cursor::after{
+    content: "Drag";
+    vertical-align: middle;
+    padding-left: 18px ;
+    padding-top: 20px;
+  }
+
+  

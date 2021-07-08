@@ -74,7 +74,7 @@
   .odometer-block > span{
     content: ":";
     margin-right: 1rem;
-    font-size: 23px;
+    font-size: 18px;
     font-weight: 300;
   }
  td{

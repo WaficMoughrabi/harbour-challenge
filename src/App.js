@@ -1,5 +1,4 @@
 
-import { useContext, useEffect, useState } from 'react';
 import './App.css';
 import TopMenu from './components/main-nav/navigation-bar.jsx';
 import StickyBar from './components/sticky-button-bar/stickybar.jsx';
