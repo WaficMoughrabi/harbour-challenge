@@ -4,6 +4,29 @@ import '../general-information-section/gerenal-information.css';
 import Widget from '../widgets';
 import DateCountdown from 'react-date-countdown-timer';
 import Lottie from 'react-lottie';
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.0/moment.min.js"></script>;
+
+function formatDate(str){
+        var  months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+        var d = new Date();
+        //var monthName=months[d.getMonth()];
+        
+        var allDate = str.split(' ');
+        var thisDate = allDate[0].split('-');
+        console.log(thisDate);
+        var thisTime = allDate[1].split(':');
+        var newDate = [+thisDate[2],months[d.getMonth()],thisDate[0] ].join(" ");
+
+        var suffix = thisTime[0] >= 12 ? "PM":"AM";
+        var hour = thisTime[0] > 12 ? thisTime[0] - 12 : thisTime[0];
+        var hour =hour < 10 ? "0" + hour : hour;
+        var min = thisTime[1] ;
+        var sec = thisTime[2] ;
+        var newTime = hour + ':' + min + suffix;
+        // console.log(moment(newDate).format('dddd MMMM D Y'));
+
+        return newDate
+    }
 
 function GeneralInformationSection(){
     const data=useContext(InfoContext);
@@ -19,6 +42,7 @@ function GeneralInformationSection(){
           preserveAspectRatio: 'xMidYMid slice'
         }
       };
+      
     
     return(
         <div className="pt-40 lg:pt-60 px-10 lg:pl-16 md:pl-10 pl-10">
@@ -56,14 +80,14 @@ function GeneralInformationSection(){
             </Widget>
             <br></br>
             <Widget height="120px" width="100%">
-            <table>
+            <table class="w-full lg:w-5/6">
                 <tr>
                     <td><span class="smallTitles">Location</span><br></br><span>{data.scholarship.location.name}</span></td>
                     <td><span class="smallTitles" >Duration</span><br></br><span>{data.scholarship.duration} Year</span></td>
-                </tr>
+                </tr><br></br>
                 <tr>
-                    <td><span class="smallTitles">Start date</span><br></br><span>{data.scholarship.scholarship_start_date}</span></td>
-                    <td><span class="smallTitles" >End date</span><br></br> <span>{data.scholarship.application_end_date}</span></td>
+                    <td><span class="smallTitles">Start date</span><br></br><span>{formatDate(data.scholarship.scholarship_start_date)}</span></td>
+                    <td><span class="smallTitles" >End date</span><br></br> <span>{formatDate(data.scholarship.application_end_date)}</span></td>
                 </tr>
             </table>
             </Widget>

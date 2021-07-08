@@ -29,7 +29,7 @@ function DetailSection(){
         </div>
     </div>
     <div className="flex flex-wrap px-5 lg:px-0 ml-0 lg:ml-8">
-    <div class="mr-0 lg:mr-8 w- lg:w-72 w-full px-6 py-8 border border-gray-300 rounded" >
+    <div class="mr-0 lg:mr-8  lg:w-customWidth w-full px-6 py-8 border border-gray-300 rounded" >
         <span class="smallTitles">Study commitment</span>
         <br></br>
         <span className="durationSpan">{data.scholarship.study_commitment} hours / day</span>
@@ -37,7 +37,7 @@ function DetailSection(){
         <span className='widgetText'>{data.scholarship.study_commitment_text}</span>
         </div>
 
-    <div class="mr-0 mt-7 lg:mt-0 w- lg:w-72 w-full px-8 py-10 border border-gray-300 rounded" >
+    <div class="mr-0 mt-7 lg:mt-0 w- lg:w-customWidth w-full px-8 py-10 border border-gray-300 rounded" >
         <span class="smallTitles">Work commitment</span>
         <br></br>
         <span className="durationSpan">{data.scholarship.internship_commitment} hours / day</span>
