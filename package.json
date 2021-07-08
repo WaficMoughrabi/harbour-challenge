@@ -1,4 +1,6 @@
 {
+  
+  "homepage": "https://waficmoughrabi.github.io/harbour-challenge",
   "name": "apprenticeship_challenge",
   "version": "0.1.0",
   "private": true,
@@ -26,6 +28,8 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+  "deploy": "gh-pages -d build",
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
@@ -51,6 +55,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^9.8.6",
+    "gh-pages": "^3.2.3",
     "postcss": "^7.0.36",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.4"
   }
