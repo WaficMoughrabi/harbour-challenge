@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/harbour-challenge/static/css/main.7db75f33.chunk.css",
+    "main.js": "/harbour-challenge/static/js/main.21a0f972.chunk.js",
+    "main.js.map": "/harbour-challenge/static/js/main.21a0f972.chunk.js.map",
+    "runtime-main.js": "/harbour-challenge/static/js/runtime-main.0f478812.js",
+    "runtime-main.js.map": "/harbour-challenge/static/js/runtime-main.0f478812.js.map",
+    "static/css/2.e141d2ba.chunk.css": "/harbour-challenge/static/css/2.e141d2ba.chunk.css",
+    "static/js/2.5a9fc1dd.chunk.js": "/harbour-challenge/static/js/2.5a9fc1dd.chunk.js",
+    "static/js/2.5a9fc1dd.chunk.js.map": "/harbour-challenge/static/js/2.5a9fc1dd.chunk.js.map",
+    "static/js/3.37c66373.chunk.js": "/harbour-challenge/static/js/3.37c66373.chunk.js",
+    "static/js/3.37c66373.chunk.js.map": "/harbour-challenge/static/js/3.37c66373.chunk.js.map",
+    "index.html": "/harbour-challenge/index.html",
+    "static/css/2.e141d2ba.chunk.css.map": "/harbour-challenge/static/css/2.e141d2ba.chunk.css.map",
+    "static/css/main.7db75f33.chunk.css.map": "/harbour-challenge/static/css/main.7db75f33.chunk.css.map",
+    "static/js/2.5a9fc1dd.chunk.js.LICENSE.txt": "/harbour-challenge/static/js/2.5a9fc1dd.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0f478812.js",
+    "static/css/2.e141d2ba.chunk.css",
+    "static/js/2.5a9fc1dd.chunk.js",
+    "static/css/main.7db75f33.chunk.css",
+    "static/js/main.21a0f972.chunk.js"
+  ]
+}
